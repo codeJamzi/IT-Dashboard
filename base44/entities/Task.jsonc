@@ -1,0 +1,32 @@
+{
+  "name": "Task",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "done": {
+      "type": "boolean",
+      "title": "Done",
+      "default": false
+    },
+    "ticket_id": {
+      "type": "string",
+      "title": "Linked Ticket ID"
+    },
+    "priority": {
+      "type": "string",
+      "title": "Priority",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default": "medium"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

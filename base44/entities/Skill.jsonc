@@ -1,0 +1,17 @@
+{
+  "name": "Skill",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

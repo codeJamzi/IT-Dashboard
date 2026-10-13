@@ -1,0 +1,33 @@
+{
+  "name": "Achievement",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "issue": {
+      "type": "string",
+      "title": "Issue"
+    },
+    "solution": {
+      "type": "string",
+      "title": "Solution / Technology"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Skills",
+      "default": []
+    },
+    "ticket_id": {
+      "type": "string",
+      "title": "Source Ticket ID"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

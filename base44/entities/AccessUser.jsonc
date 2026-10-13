@@ -1,0 +1,83 @@
+{
+  "name": "AccessUser",
+  "type": "object",
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "title": "First Name"
+    },
+    "last_name": {
+      "type": "string",
+      "title": "Last Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email Address",
+      "format": "email"
+    },
+    "pin_code": {
+      "type": "string",
+      "title": "PIN Code"
+    },
+    "access_card_1": {
+      "type": "string",
+      "title": "Access Card 1"
+    },
+    "access_card_2": {
+      "type": "string",
+      "title": "Access Card 2"
+    },
+    "user_group": {
+      "type": "string",
+      "title": "User Group"
+    },
+    "access_start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Access Start Date"
+    },
+    "access_start_time": {
+      "type": "string",
+      "title": "Access Start Time (Arizona)"
+    },
+    "access_end_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Access End Date"
+    },
+    "access_end_time": {
+      "type": "string",
+      "title": "Access End Time (Arizona)"
+    },
+    "mobile_credential": {
+      "type": "string",
+      "title": "Mobile Credential",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "default": "No"
+    },
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID"
+    },
+    "job_title": {
+      "type": "string",
+      "title": "Job Title"
+    },
+    "department": {
+      "type": "string",
+      "title": "Department"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    }
+  },
+  "required": [
+    "first_name",
+    "last_name",
+    "email"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "LearningLog",
+  "type": "object",
+  "properties": {
+    "activity": {
+      "type": "string",
+      "title": "Activity"
+    },
+    "hours": {
+      "type": "number",
+      "title": "Hours",
+      "default": 0
+    },
+    "skill": {
+      "type": "string",
+      "title": "Skill"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    }
+  },
+  "required": [
+    "activity"
+  ]
+}

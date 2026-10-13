@@ -1,0 +1,47 @@
+{
+  "name": "Certification",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "provider": {
+      "type": "string",
+      "title": "Provider"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "planned",
+        "in_progress",
+        "earned",
+        "expired"
+      ],
+      "default": "planned"
+    },
+    "skill": {
+      "type": "string",
+      "title": "Skill"
+    },
+    "target_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Target Date"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Earned Date"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Expiry Date"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

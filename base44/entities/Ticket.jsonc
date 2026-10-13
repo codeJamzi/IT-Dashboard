@@ -1,0 +1,74 @@
+{
+  "name": "Ticket",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category"
+    },
+    "priority": {
+      "type": "string",
+      "title": "Priority",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "medium"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "new",
+        "in_progress",
+        "on_hold",
+        "resolved",
+        "closed"
+      ],
+      "default": "new"
+    },
+    "assignee": {
+      "type": "string",
+      "title": "Assignee"
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Due Date"
+    },
+    "skill_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Skill Tags",
+      "default": []
+    },
+    "resolved_date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Resolved Date"
+    },
+    "issue": {
+      "type": "string",
+      "title": "Issue Summary"
+    },
+    "solution": {
+      "type": "string",
+      "title": "Solution / Technology Used"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
